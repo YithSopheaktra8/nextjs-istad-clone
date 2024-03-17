@@ -1,5 +1,5 @@
-"use client";
-import CarouselWithContent from "@/components/Carousel";
+"use client";   
+import React from "react";
 import CourseCard from "@/components/CourseCard";
 
 const course = [
@@ -88,29 +88,23 @@ const course = [
 			"Spring Course will help in understanding about Spring framework and how to build web applications, RESTful APIs using Spring, Spring MVC, Spring Boot, Thymeleaf, Spring JDBC etc. By the end of this course, students will understand all the below topics.",
 	},
 ];
-
-export default function Home() {
+export default function Course() {
 	return (
-		<div className="pb-[50px]">
-			<CarouselWithContent />
-			<div className="mx-[300px]">
-				<h2 className="text-3xl my-[40px] font-bold uppercase">
-					Courses
-				</h2>
-				<div className="grid grid-cols-3 gap-10">
-					{course.map((item, index) => {
-						return (
-							<CourseCard
-								key={index}
-								title={item.title}
-								image={item.image}
-								alt={item.alt}
-								description={item.description}
-							/>
-						);
-					})}
-				</div>
+		<>
+			<h2 className="text-3xl font-bold uppercase mx-[300px]">Courses</h2>
+			<div className="grid grid-cols-3 gap-10 mx-[300px] py-10">
+				{course.map((item, index) => {
+					return (
+						<CourseCard
+							key={index}
+							title={item.title}
+							image={item.image}
+							alt={item.alt}
+							description={item.description}
+						/>
+					);
+				})}
 			</div>
-		</div>
+		</>
 	);
 }

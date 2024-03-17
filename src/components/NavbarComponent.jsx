@@ -27,27 +27,32 @@ import {
 	BriefcaseIcon,
 } from "@heroicons/react/24/solid";
 import Image from "next/image";
+import link from "next/link";
 
 const navListMenuItems = [
 	{
 		title: "Enroll",
 		description: "Start your journey with us today",
 		icon: AcademicCapIcon,
+		link: "/enroll",
 	},
 	{
 		title: "Course",
 		description: "Explore our wide range of courses",
 		icon: ComputerDesktopIcon,
+		link: "/course",
 	},
 	{
 		title: "IT News",
 		description: "Read insightful articles, tips, and expert opinions.",
 		icon: NewspaperIcon,
+		link: "/news",
 	},
 	{
 		title: "Job Opportunities",
 		description: "Find your dream job in the IT industry",
 		icon: BriefcaseIcon,
+		link: "/job",
 	},
 ];
 
@@ -66,7 +71,7 @@ export default function NavbarWithMegaMenu() {
 		<Navbar
 			fullWidth
 			color="transparent"
-			className="mx-auto sticky top-0 z-50 w-screen px-4 py-2 bg-[#253a95] border-none">
+			className="mx-auto sticky top-0 z-50 w-screen px-4	 bg-[#253a95] border-none">
 			<div className="flex items-center justify-between text-blue-gray-900">
 				<div className="flex justify-center items-center gap-2 md:gap-0">
 					<Image
@@ -134,8 +139,8 @@ function NavListMenu() {
 	const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 	const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false);
 	const renderItems = navListMenuItems.map(
-		({ icon, title, description }, key) => (
-			<a href="#" key={key}>
+		({ icon, title, description, link }, key) => (
+			<a href={link} key={key}>
 				<MenuItem className="flex items-center gap-3 rounded-lg">
 					<div className="flex items-center justify-center rounded-lg !bg-blue-gray-50 p-2 ">
 						{" "}
@@ -213,18 +218,18 @@ function NavList() {
 		<List className="mt-4 mb-6 p-0 lg:mt-0 lg:mb-0 lg:flex-row lg:p-1">
 			<Typography
 				as="a"
-				href="#"
+				href="/"
 				variant="small"
 				color="blue-gray"
 				className="font-medium">
-				<ListItem className="flex items-center gap-2 py-2 pr-4 text-white text-lg">
-					Home
-				</ListItem>
+					<ListItem className="flex items-center gap-2 py-2 pr-4 text-white text-lg">
+						Home
+					</ListItem>
 			</Typography>
 			<NavListMenu />
 			<Typography
 				as="a"
-				href="#"
+				href="/about"
 				variant="small"
 				color="blue-gray"
 				className="font-medium">
