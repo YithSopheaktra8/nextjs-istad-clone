@@ -94,7 +94,8 @@ export default function NavbarWithMegaMenu() {
 	return (
 		<Navbar
 			fullWidth
-			className="mx-auto sticky top-0 w-screen px-4 py-2 bg-[#253b95] border-none">
+			color="transparent"
+			className="mx-auto sticky top-0 z-50 w-screen px-4 py-2 bg-[#253a95] border-none">
 			<div className="flex items-center justify-between text-blue-gray-900">
 				<div className="flex justify-center items-center gap-2 md:gap-0">
 					<Image

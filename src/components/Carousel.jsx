@@ -8,6 +8,7 @@ export default function CarouselWithContent() {
 				<Image
 					src="/images/slide-1.jpg"
 					alt="image 1"
+                    className="h-[700px]"
 					width={1920}
 					height={1080}
 				/>
