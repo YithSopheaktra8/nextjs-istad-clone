@@ -1,4 +1,4 @@
-"use client";   
+"use client";
 import React from "react";
 import CourseCard from "@/components/CourseCard";
 
@@ -90,7 +90,7 @@ const course = [
 ];
 export default function Course() {
 	return (
-		<>
+		<div className="pt-10">
 			<h2 className="text-3xl font-bold uppercase mx-[300px]">Courses</h2>
 			<div className="grid grid-cols-3 gap-10 mx-[300px] py-10">
 				{course.map((item, index) => {
@@ -105,6 +105,6 @@ export default function Course() {
 					);
 				})}
 			</div>
-		</>
+		</div>
 	);
 }
