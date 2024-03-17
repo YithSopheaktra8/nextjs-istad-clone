@@ -71,9 +71,9 @@ export default function NavbarWithMegaMenu() {
 		<Navbar
 			fullWidth
 			color="transparent"
-			className="mx-auto sticky top-0 z-50 w-screen px-4	 bg-[#253a95] border-none">
+			className="mx-auto sticky top-0 z-50 w-screen px-4 bg-[#253a95] border-none">
 			<div className="flex items-center justify-between text-blue-gray-900">
-				<div className="flex justify-center items-center gap-2 md:gap-0">
+				<div className="flex justify-center items-center gap-2 md:gap-2 lg:gap-0">
 					<Image
 						src="/images/cstad logo-no-bg.png"
 						alt="cstad logo-no-bg"
@@ -222,9 +222,9 @@ function NavList() {
 				variant="small"
 				color="blue-gray"
 				className="font-medium">
-					<ListItem className="flex items-center gap-2 py-2 pr-4 text-white text-lg">
-						Home
-					</ListItem>
+				<ListItem className="flex items-center gap-2 py-2 pr-4 text-white text-lg">
+					Home
+				</ListItem>
 			</Typography>
 			<NavListMenu />
 			<Typography
