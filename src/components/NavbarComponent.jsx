@@ -20,63 +20,34 @@ import {
 	XMarkIcon,
 } from "@heroicons/react/24/outline";
 import {
-	Bars4Icon,
-	GlobeAmericasIcon,
 	NewspaperIcon,
-	PhoneIcon,
-	RectangleGroupIcon,
-	SquaresPlusIcon,
 	SunIcon,
-	TagIcon,
-	UserGroupIcon,
+	AcademicCapIcon,
+	ComputerDesktopIcon,
+	BriefcaseIcon,
 } from "@heroicons/react/24/solid";
 import Image from "next/image";
 
 const navListMenuItems = [
 	{
-		title: "Products",
-		description: "Find the perfect solution for your needs.",
-		icon: SquaresPlusIcon,
+		title: "Enroll",
+		description: "Start your journey with us today",
+		icon: AcademicCapIcon,
 	},
 	{
-		title: "About Us",
-		description: "Meet and learn about our dedication",
-		icon: UserGroupIcon,
+		title: "Course",
+		description: "Explore our wide range of courses",
+		icon: ComputerDesktopIcon,
 	},
 	{
-		title: "Blog",
-		description: "Find the perfect solution for your needs.",
-		icon: Bars4Icon,
-	},
-	{
-		title: "Services",
-		description: "Learn how we can help you achieve your goals.",
-		icon: SunIcon,
-	},
-	{
-		title: "Support",
-		description: "Reach out to us for assistance or inquiries",
-		icon: GlobeAmericasIcon,
-	},
-	{
-		title: "Contact",
-		description: "Find the perfect solution for your needs.",
-		icon: PhoneIcon,
-	},
-	{
-		title: "News",
+		title: "IT News",
 		description: "Read insightful articles, tips, and expert opinions.",
 		icon: NewspaperIcon,
 	},
 	{
-		title: "Products",
-		description: "Find the perfect solution for your needs.",
-		icon: RectangleGroupIcon,
-	},
-	{
-		title: "Special Offers",
-		description: "Explore limited-time deals and bundles",
-		icon: TagIcon,
+		title: "Job Opportunities",
+		description: "Find your dream job in the IT industry",
+		icon: BriefcaseIcon,
 	},
 ];
 
@@ -258,7 +229,7 @@ function NavList() {
 				color="blue-gray"
 				className="font-medium">
 				<ListItem className="flex items-center gap-2 py-2 pr-4 text-white text-lg">
-					Contact Us
+					About Us
 				</ListItem>
 			</Typography>
 		</List>
