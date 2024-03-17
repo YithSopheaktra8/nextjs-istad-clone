@@ -94,7 +94,9 @@ export default function Home() {
 		<div className="pb-[50px]">
 			<CarouselWithContent />
 			<div className="mx-[300px]">
-				<h2 className="text-3xl my-[40px]">Course </h2>
+				<h2 className="text-3xl my-[40px] font-bold uppercase">
+					Courses
+				</h2>
 				<div className="grid grid-cols-3 gap-10">
 					{course.map((item, index) => {
 						return (
