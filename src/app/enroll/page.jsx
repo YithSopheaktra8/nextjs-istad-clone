@@ -9,13 +9,13 @@ import {
 
 export default function EnrollForm() {
 	return (
-		<div className="grid place-content-center py-5">
-			<Card className="px-10 py-5">
+		<div className="grid place-content-center md:py-14 lg:py-5">
+			<Card className="md:px-10 py-5">
 				<h2 className="font-bold text-3xl text-black">Enroll Form</h2>
 				<Typography color="gray" className="mt-1 font-normal">
 					Nice to meet you! Enter your details to register.
 				</Typography>
-				<div className="flex gap-10">
+				<div className="flex flex-col md:flex-row gap-10">
 					<form className="mt-8 mb-2 w-80 max-w-screen-lg sm:w-96">
 						<div className="mb-1 flex flex-col gap-6">
 							<Typography
@@ -72,10 +72,10 @@ export default function EnrollForm() {
 								variant="h6"
 								color="blue-gray"
 								className="-mb-3">
-                                    Email
+								Email
 							</Typography>
 							<Input
-                                type="email"
+								type="email"
 								size="lg"
 								placeholder="name@mail.com"
 								className=" !border-t-blue-gray-200 focus:!border-t-gray-900"
@@ -91,7 +91,7 @@ export default function EnrollForm() {
 								Phone Number
 							</Typography>
 							<Input
-                            type="number"
+								type="number"
 								size="lg"
 								placeholder="0965512322"
 								className=" !border-t-blue-gray-200 focus:!border-t-gray-900"

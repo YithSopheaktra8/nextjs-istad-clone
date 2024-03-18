@@ -9,8 +9,8 @@ import {
 
 export default function AboutUs() {
 	return (
-		<div className="flex flex-col gap-5 py-10">
-			<div className="mx-[300px] bg-white p-10 rounded-lg">
+		<div className="flex flex-col gap-5 py-10 px-5 md:mx-[100px]">
+			<div className=" bg-white p-10 rounded-lg">
 				<h2 className="text-xl font-bold">
 					What is Center of Science and Technology Advanced
 					Development?
@@ -34,11 +34,11 @@ export default function AboutUs() {
 					/>
 				</div>
 			</div>
-			<div className="mx-[300px] bg-white p-10 rounded-lg">
+			<div className=" bg-white p-10 rounded-lg">
 				<h2 className="text-xl font-bold uppercase">Vision</h2>
 				<p>Advanced IT Institute in Cambodia</p>
 			</div>
-			<div className="mx-[300px] bg-white p-10 rounded-lg">
+			<div className=" bg-white p-10 rounded-lg">
 				<h2 className="text-xl font-bold uppercase">Mission</h2>
 				<ul className="list-disc list-inside">
 					<li>
@@ -53,10 +53,10 @@ export default function AboutUs() {
 					</li>
 				</ul>
 			</div>
-			<h2 className="text-[#253a95] mx-[300px] text-4xl font-bold tracking-[5px]  text-center">
+			<h2 className="text-[#253a95] text-4xl font-bold tracking-[5px]  text-center">
 				If you have any questions, please feel free to contact us.
 			</h2>
-			<address className="mx-[300px] bg-white p-10 rounded-lg flex flex-col gap-5">
+			<address className=" bg-white p-10 rounded-lg flex flex-col gap-5">
 				<div className="flex gap-3">
 					<MapPinIcon className="h-6 w-6 text-[#253a95]" />
 					<p>

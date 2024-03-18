@@ -21,7 +21,7 @@ const currentYear = new Date().getFullYear();
 export default function Footer() {
 	return (
 		<footer className=" w-full bg-[#253a95] pt-[50px]">
-			<div className=" lg:mx-[300px] px-8">
+			<div className="mx-[20px] md:mx-[100px] px-8">
 				<div className="grid grid-cols-1 justify-between gap-4 md:grid-cols-2">
 					<Image
 						src="/images/cstad logo-no-bg.png"

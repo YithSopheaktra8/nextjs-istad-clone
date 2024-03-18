@@ -13,7 +13,7 @@ import Image from "next/image";
 
 export default function CourseCard({ title, image, alt, description }) {
 	return (
-		<Card className="w-full shadow-lg">
+		<Card className="w-auto shadow-lg">
 			<CardHeader floated={false} color="blue-gray">
 				<Image src={image} alt="flutter" width={1470} height={980} />
 				<div className="to-bg-black-10 absolute inset-0 h-full w-full bg-gradient-to-tr from-transparent via-transparent to-black/60 " />

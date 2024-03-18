@@ -8,7 +8,7 @@ export default function CarouselWithContent() {
 				<Image
 					src="/images/slide-1.jpg"
 					alt="image 1"
-                    className="h-[700px]"
+					className="h-[700px]"
 					width={1920}
 					height={1080}
 				/>
@@ -18,24 +18,23 @@ export default function CarouselWithContent() {
 							variant="h1"
 							color="white"
 							className="mb-4 text-3xl md:text-4xl lg:text-5xl">
-							The Beauty of Nature
+							Center of Science and Technology Advanced
+							Development
 						</Typography>
 						<Typography
 							variant="lead"
 							color="white"
 							className="mb-12 opacity-80">
-							It is not so much for its beauty that the forest
-							makes a claim upon men&apos;s hearts, as for that
-							subtle something, that quality of air that emanation
-							from old trees, that so wonderfully changes and
-							renews a weary spirit.
+							CSTAD is a noteworthy science and technology center
+							in Cambodia. CSTAD has routed Cambodian students to
+							advanced science and technology, research, and
+							develop digital skills and our graduates have been
+							guaranteed excellent job opportunities with the Top
+							IT company.
 						</Typography>
 						<div className="flex justify-center gap-2">
-							<Button size="lg" color="white">
-								Explore
-							</Button>
-							<Button size="lg" color="white" variant="text">
-								Gallery
+							<Button size="lg" className="bg-[#253a95]">
+								Enroll Now
 							</Button>
 						</div>
 					</div>
@@ -55,24 +54,17 @@ export default function CarouselWithContent() {
 							variant="h1"
 							color="white"
 							className="mb-4 text-3xl md:text-4xl lg:text-5xl">
-							The Beauty of Nature
+							Vision
 						</Typography>
 						<Typography
 							variant="lead"
 							color="white"
 							className="mb-12 opacity-80">
-							It is not so much for its beauty that the forest
-							makes a claim upon men&apos;s hearts, as for that
-							subtle something, that quality of air that emanation
-							from old trees, that so wonderfully changes and
-							renews a weary spirit.
+							Advanced IT Center in Cambodia
 						</Typography>
 						<div className="flex gap-2">
-							<Button size="lg" color="white">
-								Explore
-							</Button>
-							<Button size="lg" color="white" variant="text">
-								Gallery
+							<Button size="lg" className="bg-[#253a95]">
+								Enroll Now
 							</Button>
 						</div>
 					</div>
@@ -92,24 +84,31 @@ export default function CarouselWithContent() {
 							variant="h1"
 							color="white"
 							className="mb-4 text-3xl md:text-4xl lg:text-5xl">
-							The Beauty of Nature
+							Mission
+						</Typography>
+						<Typography
+							variant="lead"
+							color="white"
+							className="opacity-80">
+							Provide the latest methodology with high-quality
+							training and mentoring
+						</Typography>
+						<Typography
+							variant="lead"
+							color="white"
+							className="opacity-80">
+							Consult and connect CSTAD trainees to top IT careers
 						</Typography>
 						<Typography
 							variant="lead"
 							color="white"
 							className="mb-12 opacity-80">
-							It is not so much for its beauty that the forest
-							makes a claim upon men&apos;s hearts, as for that
-							subtle something, that quality of air that emanation
-							from old trees, that so wonderfully changes and
-							renews a weary spirit.
+							Build up the capacity and career of IT experts
+							Cambodia
 						</Typography>
 						<div className="flex gap-2">
-							<Button size="lg" color="white">
-								Explore
-							</Button>
-							<Button size="lg" color="white" variant="text">
-								Gallery
+							<Button size="lg" className="bg-[#253a95]">
+								Enroll Now
 							</Button>
 						</div>
 					</div>

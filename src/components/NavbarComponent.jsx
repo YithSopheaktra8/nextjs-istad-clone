@@ -27,7 +27,7 @@ import {
 	BriefcaseIcon,
 } from "@heroicons/react/24/solid";
 import Image from "next/image";
-import link from "next/link";
+import Link from "next/link";
 
 const navListMenuItems = [
 	{
@@ -58,7 +58,6 @@ const navListMenuItems = [
 
 export default function NavbarWithMegaMenu() {
 	const [openNav, setOpenNav] = React.useState(false);
-	const blueColor = "#253b95";
 
 	React.useEffect(() => {
 		window.addEventListener(
@@ -71,15 +70,17 @@ export default function NavbarWithMegaMenu() {
 		<Navbar
 			fullWidth
 			color="transparent"
-			className="mx-auto sticky top-0 z-50 w-screen px-4 bg-[#253a95] border-none">
+			className="mx-auto sticky top-10  w-screen px-4 bg-[#253a95] border-none">
 			<div className="flex items-center justify-between text-blue-gray-900">
 				<div className="flex justify-center items-center gap-2 md:gap-2 lg:gap-0">
-					<Image
-						src="/images/cstad logo-no-bg.png"
-						alt="cstad logo-no-bg"
-						width={60}
-						height={60}
-					/>
+					<Link href="/">
+						<Image
+							src="/images/cstad logo-no-bg.png"
+							alt="cstad logo-no-bg"
+							width={60}
+							height={60}
+						/>
+					</Link>
 					<Typography
 						as="a"
 						href="#"
@@ -94,20 +95,19 @@ export default function NavbarWithMegaMenu() {
 				</div>
 				<div className="hidden gap-2 lg:flex">
 					<Button
-						variant="text"
 						size="sm"
-						color="blue-gray"
-						className="text-black bg-white hover:text-white">
+						className="text-black bg-white hover:text-[#253a95]">
 						Log In
 					</Button>
-					<Button variant="gradient" size="sm">
+					<Button
+						size="sm"
+						className="text-black bg-white hover:text-[#253a95]">
 						Sign In
 					</Button>
 				</div>
 				<IconButton
 					variant="text"
-					color="blue-gray"
-					className="lg:hidden"
+					className="lg:hidden text-white"
 					onClick={() => setOpenNav(!openNav)}>
 					{openNav ? (
 						<XMarkIcon className="h-6 w-6" strokeWidth={2} />
@@ -153,7 +153,7 @@ function NavListMenu() {
 						<Typography
 							variant="h6"
 							color="blue-gray"
-							className="flex items-center text-sm font-bold text-[#253b95] text-lg">
+							className="flex items-center text-sm font-bold text-white md:text-[#253b95] text-lg">
 							{title}
 						</Typography>
 						<Typography
